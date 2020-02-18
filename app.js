@@ -2,31 +2,83 @@
 // Progression 1: Names and Input
 
 // 1.1 Create a variable `ProGrad-1` with the driver's name.
-// 1.2 Print `"The driver's name is XXXX"`.
+              var string1="saketh"
+		// 1.2 Print `"The driver's name is XXXX"`.
+        console.log(string1);
 // 1.3 Create a variable `ProGrad-2` with the navigator's name.
+           var string2="kowshik"
 // 1.4 Print `"The navigator's name is YYYY"`.
+          console.log(string2);
 
 // Progression 2: Control Statements - 1
 // 2.1. Depending on which name is longer, print:
 // - The driver has the longest name, it has XX characters. or
 // - It seems that the navigator has the longest name, it has XX characters. or
 // - Wow, you both have equally long names, XX characters!.
+         let number1=string1.length,
+		    number2=string2.length;
+			 if(number1=>number2)
+			 {
+				 console.log(number1)
+			 }
+			 else
+			 {
+				 console.log(number2)
+			 }
 
 // 2.2. Check if the string contains vowels or not.
 // - If it contains vowels, print the number of name, and also print the vowel letters along with the vowel characters. or
 // - print no vowels
+n
+    var line[10]={'k','o','w','s','h','i','k'}
+    let vowels, consonant, digit, space;
+    vowels = consonant = digit = space = 0;
+    for (int i = 0; line[i] != '\0'; ++i) {
+        if (line[i] == 'a' || line[i] == 'e' || line[i] == 'i' ||
+            line[i] == 'o' || line[i] == 'u' || line[i] == 'A' ||
+            line[i] == 'E' || line[i] == 'I' || line[i] == 'O' ||
+            line[i] == 'U') {
+            ++vowels;
+        } else if ((line[i] >= 'a' && line[i] <= 'z') || (line[i] >= 'A' && line[i] <= 'Z')) {
+            ++consonant;
+        } else if (line[i] >= '0' && line[i] <= '9') {
+            ++digit;
+        } else if (line[i] == ' ') {
+            ++space;
+        }
+    }
+  console.log(vowels)
+   console.log(consonant)
+   console.log(digit)
 
 // 2.3. Check if the string contains uppercase and lowercase characters Xx
 // - Print the number of upper case characters
 // - Print the number of lower case characters
 
+   var str="kowshik";
+    let countL,countU;
+    let counter;
+        countL=countU=0;
+      for(counter=0;str[counter]!='\0';counter++){
+         if(str[counter]>='A' && str[counter]<='Z')
+            countU++;
+        else if(str[counter]>='a' && str[counter]<='z')
+            countL++;   
+    }
+    console.log(countL)
+   console.log(countU)
 
 // Progression 3: Control Statements - 2
 // 3.1 Print all the characters of the driver's name, separated by a space and in capitals i.e. "ProGrad"
 
-// 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "darGorP"
 
+// 3.2 Print all the characters of the navigator's name, in reverse order. i.e. "darGorP"
+var str="kowshik";
+console.log(reverse.str)
 // 3.3 Merge both the characters such that driver is followed by Navigator like "ProGrad FACEPrep"
+var str1="kowshik"
+var str2="saketh"
+str1+str2;
 // - Now bring the FACEPrep to the start and send ProGrad to the back like "FACEPrep ProGrad"
 
 // 3.3 Depending on the lexicographic order of the strings, print:
@@ -34,6 +86,21 @@
 // - Yo, the navigator goes first definitely.
 // - What?! You both have the same name?
 
+let number1=string1.length,
+		    number2=string2.length;
+			 if(number1>number2)
+			 {
+				 console.log(string1)
+			 }
+			 else
+			 {
+				 console.log(string2)
+			 }
+			 else
+			 {
+				 console.log(samename)
+			 }
+			 
 // Bonus Time!
 // Bonus 1:
 // Go to lorem ipsum generator and:
