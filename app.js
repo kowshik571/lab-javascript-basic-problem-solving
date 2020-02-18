@@ -109,6 +109,16 @@ let number1=string1.length,
 // Make your program count the number of times the Latin word et appears.
 // Bonus 2:
 // Create a new variable phraseToCheck and have it contain some string value. Write a code that will check if the value we assigned to this variable is a Palindrome. Here are some examples of palindromes:
+var str1,str2,str3;
+str1="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+str2="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+str3="lorem ipsum lorem ipsum lorem ipsum lorem ipsum loerm ipsum lorem ipsum lorem ipsum"
+var number1=str1.count;
+var number2=str2.count;
+var number3=str3.count;
+console.log(number1)
+console.log(number2)
+console.log(number3)
 
 // "A man, a plan, a canal, Panama!"
 // "Amor, Roma"
@@ -118,5 +128,43 @@ let number1=string1.length,
 // "taco cat"
 // "put it up"
 // "Was it a car or a cat I saw?" and "No 'x' in Nixon".
+// Write a JavaScript function that checks whether a passed string is palindrome or not? 
+
+function check_Palindrome(str_entry){
+   var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+	var ccount = 0;
+	if(cstr==="") {
+		console.log("Nothing found!");
+		return false;
+	}
+	if ((cstr.length) % 2 === 0) {
+		ccount = (cstr.length) / 2;
+	} else {
+		if (cstr.length === 1) {
+			console.log("Entry is a palindrome.");
+			return true;
+		} else {
+			ccount = (cstr.length - 1) / 2;
+		}
+	}
+	for (var x = 0; x < ccount; x++) {
+		if (cstr[x] != cstr.slice(-1-x)[0]) {
+			console.log("Entry is not a palindrome.");
+			return false;
+		}
+	}
+	console.log("The entry is a palindrome.");
+	return true;
+}
+check_Palindrome('Was it a car or a cat I saw?" and "No 'x' in Nixon')
+check_Palindrome('put it up')
+check_Palindrome('taco cat')
+check_Palindrome('step on no pets')
+check_Palindrome('stack cats')
+check_Palindrome('step on no pets')
+check_Palindrome('stack cats')
+check_Palindrome('race car');
+check_Palindrome('Amor, Roma');
+check_Palindrome('A man, a plan, a canal, Panama!');
 
 // Hint: If you use Google to help you to find solution to this iteration, you might run into some solutions that use advanced string or array methods (such as join(), reverse(), etc.). However, try to apply the knowledge you currently have since you can build pretty nice solution with just using for loop, if-else statements with some break and continue... Just sayin' 
